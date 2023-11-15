@@ -16,7 +16,7 @@ program token.aleo {
     transition mint(ticket_: multisig.leo/ticket.record, args: MintArgs) -> token {
         assert_eq(
             ticket_.program_address,
-            aleo16l909ch9c9zujjlthk47knk72zq0r4wd7eveqm8ukgta6cfszsgs4nd7p4 // address("token.aleo")
+            aleo16l909ch9c`9zujjlthk47knk72zq0r4wd7eveqm8ukgta6cfszsgs4nd7p4 // address("token.aleo")
         );
         assert_eq(ticket_.function_id, MINT_FN);
         assert_eq(ticket_.args_hash, BHP256::hash_to_field(args));
